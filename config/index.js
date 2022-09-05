@@ -6,75 +6,50 @@ export const config = {
   // 公众号APP_ID 
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  // APP_ID: "",
+  // APP_ID: "wxa23ad66f0303c320",
 
   // 公众号APP_SECRET 
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  // APP_SECRET: "",
+  // APP_SECRET: "6a4c56253a9169221cf305edc7e55af6",
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如
-   * [
+   * [ohXdU6g6h3qHQkoxyjHbByFwvYjM]
    *  {
    *    // 想要发送的人的名字
    *    name: "老婆0",
    *    // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
    *    id: "ohxOO6VskYv0Kuf-ywIZVRMpuXhk",
    *    // 你想对他发送的模板消息的模板ID
-   *    useTemplateId: "zjVglIuCXo4CsraXWEio1iP7sZJ7IQEES9lDsgc4yOU",
+   *    useTemplateId: "EnhsQPZ3e-HLgVrL9TlzP2m7Q8mWjuAykLi77tPgyF8",
    *    // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-   *    openUrl: "https://wangxinleo.cn"
+   *    openUrl: "https://"
    *   }, 
    * ]
    */
   USERS: [
     {
       // 想要发送的人的名字
-      name: "老婆0",
+      name: "刘咩咩",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ohxOO6VskY2v40Kuf5ywIZVRM3puXhk",
+      id: "ohXdU6g6h3qHQkoxyjHbByFwvYjM",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "Wue80GrtY1nAi5a4tam4FDxZF59WNx9pwcBc06LMpANnu8",
+      useTemplateId: "EnhsQPZ3e-HLgVrL9TlzP2m7Q8mWjuAykLi77tPgyF8	",
       // 所在省份
-      province: "广东",
+      province: "天津",
       // 所在城市
-      city: "肇庆",
+      city: "天津",
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       openUrl: "https://wangxinleo.cn"
     }, 
-    {
-      name: "老婆1", 
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      openUrl: "https://wangxinleo.cn"
-    }, 
-    {
-      name: "老婆2",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      openUrl: "https://wangxinleo.cn"
-    }, 
-    {
-      name: "老婆3", 
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      openUrl: "https://wangxinleo.cn"
-    }, 
-  ],
-
+    
   /**
    * 回调消息 相关，主要用来展示发送是否成功/失败的数据
    */
 
-  // 回调消息模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "zjV1glIuCXo4Csr23aXWEio1iP74sZJ7IQEES95lDsg6c4yOU",
+  {// 回调消息模板id, 用来看自己有没有发送成功的那个模板
+  CALLBACK_TEMPLATE_ID: "734dPA2IJV_m1tSQxGDTi82kZdtxYBHo8i8WX6r4q3E	",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -82,7 +57,7 @@ export const config = {
       // 一般都填自己
       name: "自己",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ohx12OO6VskYv03Kuf43ywIZVRM4puXhk",
+      id: "ohXdU6kfVydSng-P5oqNuqNyKpE0",
     }, 
   ],
     
@@ -93,9 +68,9 @@ export const config = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "广东",
+  PROVINCE: "天津",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "惠州",
+  CITY: "天津",
 
   /** 重要节日相关 */
 
@@ -106,10 +81,9 @@ export const config = {
    * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
    */
   FESTIVALS: [
-    {"type": "生日", "name": "老婆", "year": "1996", "date": "09-02"},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-    {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+    {"type": "生日", "name": "刘咩咩", "year": "2004", "date": "01-01"},
+    {"type": "节日", "name": "恋爱周年日", "year": "2021", "date": "05-14"},
+    {"type": "生日", "name": "张猪猪", "year": "2003", "date": "11-20"},
   ],
 
   /**
@@ -117,7 +91,7 @@ export const config = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  FESTIVALS_LIMIT: 3,
 
   /** 日期相关 */
 
@@ -127,14 +101,7 @@ export const config = {
     * */
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
-    {"keyword": "love_day", date: "2015-05-01"},
-    // 结婚纪念日
-    {"keyword": "marry_day", date: "2020-01-04"},
-    // 退伍日, 不用可以删掉
-    {"keyword": "ex_day", date: "2022-08-31"},
-    // sakana日
-    // {"keyword": "sakana_day", date: "2022-01-06"},
-    // ... 
+    {"keyword": "love_day", date: "21-05-14,
   ],
 
   /** 插槽 */
@@ -143,16 +110,30 @@ export const config = {
     * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
     * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }} 
     * */
-  SLOT_LIST: [
-    // 这样配置的话，就会每次发送这句话
-    {"keyword": "encourage_oneself", contents: "你主要的问题在于读书太少而想得太多"},
     // 这样配置的话，就会每次随机选一句话发送
-    {"keyword": "lover_prattle", contents: [
-      "因为太喜欢你，所以看谁都像是情敌。",
-      "申请成为你爱里的永久居民。",
-      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
-      "遇见你，就好像捡到了100斤的运气",
-    ]},
+    {"keyword": "lover_prattle", [
+"是我山高路远，慢慢而来的追求与救赎",
+"有温柔与眷恋都是对你灿若星辰的喜欢",
+"我们一起联手向这个快餐爱情肆意横行的年代宣战吧",
+"微风悄悄撼动月牙，像个屁，你敲锣打鼓般闯进我的心",
+"敬仰这上天了十数载，他给予我最好的礼物是如同天使一般的你",
+"记忆中最美的春天，是那个在阳光下绑着马尾的你！！！",
+"也许神明不佑，星辰晦暗，少女在，光和救赎就在；换句话说，只要你在，我就爱这人间。",
+"前觉得弥足珍贵的自然景观是十里清风拂面而来，万顷星河浩荡璀璨，自从见了你之后，我只想携着清风将这万顷星河赠予你。",
+"是我的世界观，决定我的方法论。",
+"够同时拥有可爱和温柔，把黑夜点亮的人都是神明，所以你是神明",
+"微风，是晚霞，是心跳不止，是无可替代。",
+"是蓝色星球，而我是黄赤交角",
+"是北大西洋暖流，我是摩尔曼斯克港，你的温暖使我终年不冻",
+"对你的爱就像斯大林模式",
+"爱上你，顺应历史发展潮流，符合历史发展规律",
+"月色美和太阳耀眼的人一定是没见过你笑的样子",
+"厢思量秋为水，一缕秋风扶摇落",
+"野蛮生长，没能成为自己的月亮，能遇见你，是银河赠予我的糖",
+        "曾踏星乘月而来，只因为你在山中",
+"也曾虚度光阴甚至莽撞甚至视死如归，却因遇上你而渴望长命百岁",
+"越过四十万公里，越过昼夜与星辰，越过人声鼎沸的夏天，只为了在你最喜欢的冬天相见",
+"的爱意是我唯一能够与未知而迷茫的未来对抗的底气！！！",    ]},
   ],
 
   /** 每日一言 */
