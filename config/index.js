@@ -18,7 +18,7 @@ export const config = {
    * [ohXdU6g6h3qHQkoxyjHbByFwvYjM]
    *  {
    *    // 想要发送的人的名字
-   *    name: "老婆0",
+   *    name: "刘咩咩",
    *    // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
    *    id: "ohxOO6VskYv0Kuf-ywIZVRMpuXhk",
    *    // 你想对他发送的模板消息的模板ID
@@ -110,8 +110,9 @@ export const config = {
     * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
     * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }} 
     * */
+     SLOT_LIST: [
     // 这样配置的话，就会每次随机选一句话发送
-    {"keyword": "lover_prattle", [
+    {"keyword": "lover_prattle",contents: [
 "是我山高路远，慢慢而来的追求与救赎",
 "有温柔与眷恋都是对你灿若星辰的喜欢",
 "我们一起联手向这个快餐爱情肆意横行的年代宣战吧",
